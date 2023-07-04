@@ -1,0 +1,19 @@
+```{r}
+library(tidyverse)
+library(primer.data)
+```
+
+```{r}
+cars
+cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
+cars |> ggplot(aes(x = displacement, y = mpg)) + geom_point() + labs(title = "The Effect of Engine Displacement on Gas Mileage", x = "Engine Displacement", y = "Miles Per Gallon", subtitle = "Generally, as engine displacement increases, gas mileage decreases", caption = "Kaggle: Car Information Dataset") + theme_classic()
+```
+
+```{}
+```
+
+---
+title: "Automobiles"
+format: html
+editor: visual
+---
